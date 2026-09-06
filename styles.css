@@ -46,7 +46,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1.2rem 8%;
-    background: rgba(11, 15, 25, 0.8);
+    background: rgba(11, 15, 25, 0.85);
     backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--border-subtle);
 }
@@ -56,11 +56,13 @@ body {
     font-weight: 800;
     letter-spacing: -0.5px;
     color: #fff;
+    white-space: nowrap; /* Evita que el logo se rompa en 2 líneas */
 }
 
 .logo .dot {
     background: linear-gradient(135deg, var(--accent-blue), var(--accent-violet));
-    -webkit-background-clip: text; background-clip: text;
+    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -76,12 +78,34 @@ body {
     font-weight: 500;
     font-size: 0.95rem;
     transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
 .navbar nav a:hover {
     color: var(--accent-blue);
 }
 
+/* ==========================================
+   AJUSTE PARA MÓVILES (Agrega esto en tus @media queries)
+   ========================================== */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Pone el logo arriba y el menú abajo */
+        gap: 0.8rem;
+        padding: 0.8rem 5%;
+    }
+
+    .navbar nav {
+        width: 100%;
+        justify-content: center;
+        gap: 1rem; /* Espacio uniforme entre enlaces */
+        flex-wrap: wrap; /* Si hay muchos enlaces, bajan ordenadamente sin taparse */
+    }
+
+    .navbar nav a {
+        font-size: 0.85rem; /* Reduce un poco la letra para pantallas pequeñas */
+    }
+}
 /* Botones Navegación */
 .btn-cv-nav {
     display: inline-flex;
