@@ -85,6 +85,12 @@
             <a href="#servicios">Servicios</a>
             <a href="#proyectos">Proyectos</a>
             <a href="#stack">Tecnologías</a>
+            <a href="https://github.com/Samdersson" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            onclick="gtag('event', 'click_github_profile', {'event_category': 'Redes', 'event_label': 'Header Github'});">
+                <i class="fab fa-github"></i> GitHub
+            </a>
             <a href="#contacto" class="btn-nav">Contactar</a>
         </nav>
     </header>
@@ -491,7 +497,33 @@
         </div>
     </section>
 
+    <!-- BOTÓN FLOTANTE PERMANENTE DE WHATSAPP CON TEXTO GUÍA -->
+<div class="whatsapp-float-container">
+    <!-- Texto guía / Burbuja de chat -->
+    <div class="whatsapp-tooltip">
+        👋 ¡Hola! ¿Tienes un proyecto en mente? <br>
+        <span style="color: #25d366; font-weight: 700;">¡Hablemos y lo cotizamos!</span>
+    </div>
+    <!-- Botón circular de WhatsApp -->
+    <a href="https://wa.me/573173562745?text=%C2%A1Hola%20Samdersson!%20Vi%20tu%20portafolio%20y%20quiero%20cotizar%20un%20proyecto." 
+       target="_blank" 
+       rel="noopener noreferrer"
+       onclick="gtag('event', 'click_whatsapp', {'event_category': 'Contacto', 'event_label': 'Boton Flotante Permanent'});" 
+       class="whatsapp-btn-circle">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</div>
+
     <footer>
+        <div style="margin-bottom: 10px; display: flex; justify-content: center; gap: 15px;">
+            <a href="https://github.com/Samdersson" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            style="color: var(--text-muted); font-size: 1.2rem;"
+            onclick="gtag('event', 'click_github_profile', {'event_category': 'Redes', 'event_label': 'Footer Github'});">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
         <p>&copy; 2026 Samdersson Nuñez. Desarrollado de manera independiente.</p>
     </footer>
 
