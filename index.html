@@ -4,20 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LEH8VTVCDP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-LEH8VTVCDP');
+    </script>
+
+    <!-- Meta SEO Principal -->
+    <title>Samdersson Nuñez | Desarrollador Full Stack & Trafficker Digital</title>
+    <meta name="description" content="Desarrollador Full Stack y Trafficker Digital. Desarrollo software a medida, aplicaciones web de alto rendimiento y campañas de pauta digital orientadas a ROAS.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://samdersson.netlify.app/">
+
+    <!-- Open Graph / Redes Sociales -->
+    <meta property="og:type" content="website">
     <meta property="og:title" content="Samdersson Nuñez | Desarrollador Full Stack & Trafficker Digital">
     <meta property="og:description" content="Software a medida, aplicaciones web, pauta digital y diseño estratégico.">
     <meta property="og:image" content="https://samdersson.netlify.app/picture.jpg">
     <meta property="og:url" content="https://samdersson.netlify.app/">
+    
+    <!-- Favicons & Manifest -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <title>Samdersson Nuñez | Desarrollador Full Stack & Trafficker Digital</title>
-    <!-- Font Awesome Icons -->
+    
+    <!-- Preconnect WPO para Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Font Awesome Icons & Google Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Schema.org JSON-LD (Rich Snippets) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Samdersson Nuñez",
+      "jobTitle": "Desarrollador Full Stack & Trafficker Digital",
+      "url": "https://samdersson.netlify.app/",
+      "image": "https://samdersson.netlify.app/picture.jpg",
+      "sameAs": [
+        "https://github.com/Samdersson"
+      ],
+      "knowsAbout": [
+        "Full Stack Web Development",
+        "Python",
+        "Django",
+        "React",
+        "Meta Ads",
+        "Google Ads",
+        "Digital Marketing",
+        "ROAS Optimization"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "category": "Desarrollo de Software y Marketing Digital"
+      }
+    }
+    </script>
 </head>
 
 <body>
@@ -49,7 +102,11 @@
                 <!-- SELECTOR RÁPIDO DE CV Y ACCIONES -->
                 <div class="hero-actions" style="flex-direction: column; align-items: flex-start; gap: 12px;">
                     <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-                        <a href="https://wa.me/573173562745?text=Hola%20Samdersson,%20quiero%20cotizar%20un%20proyecto" target="_blank" class="btn-primary">
+                        <a href="https://wa.me/573173562745?text=Hola%20Samdersson,%20quiero%20cotizar%20un%20proyecto" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="btn-primary"
+                           onclick="gtag('event', 'click_whatsapp', {'event_category': 'Contacto', 'event_label': 'Hero Whatsapp'});">
                             <i class="fab fa-whatsapp"></i> Hablar por WhatsApp
                         </a>
                         <a href="#proyectos" class="btn-secondary">Ver Proyectos</a>
@@ -58,10 +115,18 @@
                     <!-- Botones de Descarga de CV Separados -->
                     <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 5px;">
                         <span style="font-size: 0.85rem; font-weight: 700; color: var(--text-muted); display: flex; align-items: center;">Descargar CV:</span>
-                        <a href="CV SAMDERSSON NÚÑEZ LANCHEROS FULLSTACK.pdf" download="CV_Desarrollo_Samdersson_Nunez.pdf" class="btn-secondary" style="font-size: 0.85rem; padding: 0.5rem 1rem;">
+                        <a href="CV SAMDERSSON NÚÑEZ LANCHEROS FULLSTACK.pdf" 
+                           download="CV_Desarrollo_Samdersson_Nunez.pdf" 
+                           class="btn-secondary" 
+                           style="font-size: 0.85rem; padding: 0.5rem 1rem;"
+                           onclick="gtag('event', 'download_cv', {'event_category': 'Recursos', 'event_label': 'CV FullStack'});">
                             <i class="fas fa-file-code"></i> CV Desarrollo
                         </a>
-                        <a href="CV SAMDERSSON NÚÑEZ LANCHEROS TRAFFICKER DIGITAL.pdf" download="CV_Trafficker_Samdersson_Nunez.pdf" class="btn-secondary" style="font-size: 0.85rem; padding: 0.5rem 1rem; border-color: #25d366; color: #16a34a;">
+                        <a href="CV SAMDERSSON NÚÑEZ LANCHEROS TRAFFICKER DIGITAL.pdf" 
+                           download="CV_Trafficker_Samdersson_Nunez.pdf" 
+                           class="btn-secondary" 
+                           style="font-size: 0.85rem; padding: 0.5rem 1rem; border-color: #25d366; color: #16a34a;"
+                           onclick="gtag('event', 'download_cv', {'event_category': 'Recursos', 'event_label': 'CV Trafficker'});">
                             <i class="fas fa-chart-line"></i> CV Trafficker
                         </a>
                     </div>
@@ -70,7 +135,7 @@
             </div>
             <div class="hero-image">
                 <div class="avatar-card">
-                    <img src="picture.jpg" alt="Samdersson Nuñez">
+                    <img src="picture.jpg" alt="Samdersson Nuñez - Desarrollador Full Stack y Trafficker Digital" width="300" height="300">
                     <div class="experience-badge">
                         <span class="num">+4</span>
                         <span class="text">Años de Exp.</span>
@@ -97,7 +162,7 @@
             <div class="service-card">
                 <div class="service-icon"><i class="fas fa-chart-line"></i></div>
                 <h3>Tráfico Pago & Performance (Trafficker)</h3>
-                <p>Gestión avanzada de campañas en Meta Ads y Google Ads, segmentación de audiencias, optimización de CPL/CPC y enfoque total en ROAS</p>
+                <p>Gestión avanzada de campañas en Meta Ads y Google Ads, segmentación de audiencias, optimización de CPL/CPC y enfoque total en ROAS.</p>
             </div>
 
             <div class="service-card">
@@ -175,7 +240,11 @@
                         </div>
 
                         <div class="project-links">
-                            <a href="https://github.com/Samdersson/planta-de-beneficio" target="_blank" class="btn-github-sm">
+                            <a href="https://github.com/Samdersson/planta-de-beneficio" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="btn-github-sm"
+                               onclick="gtag('event', 'view_project', {'event_category': 'Proyectos', 'event_label': 'EVC Github'});">
                                 <i class="fab fa-github"></i> Código Fuente
                             </a>
                         </div>
@@ -201,7 +270,11 @@
                         </div>
 
                         <div class="project-links">
-                            <a href="https://360digital.netlify.app/" target="_blank" class="btn-demo">
+                            <a href="https://360digital.netlify.app/" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="btn-demo"
+                               onclick="gtag('event', 'view_project', {'event_category': 'Proyectos', 'event_label': '360 Digital'});">
                                 <i class="fas fa-external-link-alt"></i> Visitar Sitio
                             </a>
                         </div>
@@ -223,7 +296,11 @@
                         </div>
 
                         <div class="project-links">
-                            <a href="https://ecobicigo.netlify.app/" target="_blank" class="btn-demo">
+                            <a href="https://ecobicigo.netlify.app/" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="btn-demo"
+                               onclick="gtag('event', 'view_project', {'event_category': 'Proyectos', 'event_label': 'EcoBiciGo'});">
                                 <i class="fas fa-external-link-alt"></i> Ver Demo
                             </a>
                         </div>
@@ -245,7 +322,11 @@
                         </div>
 
                         <div class="project-links">
-                            <a href="https://catalogo-cuadros.netlify.app/" target="_blank" class="btn-demo">
+                            <a href="https://catalogo-cuadros.netlify.app/" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="btn-demo"
+                               onclick="gtag('event', 'view_project', {'event_category': 'Proyectos', 'event_label': 'Catálogo Cuadros'});">
                                 <i class="fas fa-external-link-alt"></i> Ver Catálogo
                             </a>
                         </div>
@@ -267,7 +348,11 @@
                         </div>
 
                         <div class="project-links">
-                            <a href="https://combosdm.netlify.app/" target="_blank" class="btn-demo">
+                            <a href="https://combosdm.netlify.app/" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="btn-demo"
+                               onclick="gtag('event', 'view_project', {'event_category': 'Proyectos', 'event_label': 'Combos DM'});">
                                 <i class="fas fa-external-link-alt"></i> Ver Combos
                             </a>
                         </div>
@@ -289,7 +374,11 @@
                         </div>
 
                         <div class="project-links">
-                            <a href="https://dulzuramia.netlify.app/" target="_blank" class="btn-demo">
+                            <a href="https://dulzuramia.netlify.app/" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="btn-demo"
+                               onclick="gtag('event', 'view_project', {'event_category': 'Proyectos', 'event_label': 'Dulzura Mia'});">
                                 <i class="fas fa-external-link-alt"></i> Ver Sitio Web
                             </a>
                         </div>
@@ -311,14 +400,18 @@
                         </div>
 
                         <div class="project-links">
-                            <a href="https://github.com/Samdersson/Gestion-360-ERP" target="_blank" class="btn-github-sm">
+                            <a href="https://github.com/Samdersson/Gestion-360-ERP" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="btn-github-sm"
+                               onclick="gtag('event', 'view_project', {'event_category': 'Proyectos', 'event_label': 'ERP Gestion-360 Github'});">
                                 <i class="fab fa-github"></i> Ver Repositorio
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Agendador / Asignador de Turnos -->
+                <!-- 7. Agendador / Asignador de Turnos -->
                 <div class="project-card">
                     <div class="project-header-bar">
                         <i class="fas fa-calendar-check card-icon"></i>
@@ -333,7 +426,11 @@
                         </div>
 
                         <div class="project-links">
-                            <a href="https://github.com/Samdersson/agendar_turnos" target="_blank" class="btn-github-sm">
+                            <a href="https://github.com/Samdersson/agendar_turnos" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="btn-github-sm"
+                               onclick="gtag('event', 'view_project', {'event_category': 'Proyectos', 'event_label': 'Agendador Github'});">
                                 <i class="fab fa-github"></i> Código Fuente
                             </a>
                         </div>
@@ -371,14 +468,25 @@
         </div>
     </section>
 
-    <!-- Contacto Directo -->
+    <!-- Contacto Directo & Captura de Leads -->
     <section id="contacto" class="cta-section">
         <div class="cta-card">
             <h2>¿Tienes un proyecto en mente?</h2>
-            <p>Escríbeme directamente y conversamos sobre cómo llevarlo a cabo.</p>
+            <p>Cotiza tu proyecto o solicita una asesoría estratégica para impulsar tu negocio.</p>
+
             <div class="contact-buttons">
-                <a href="https://wa.me/573173562745" target="_blank" class="btn-cta-primary"><i class="fab fa-whatsapp"></i> Chat Directo por WhatsApp</a>
-                <a href="mailto:san9639@gmail.com" class="btn-cta-secondary"><i class="fas fa-envelope"></i> Enviar Correo</a>
+                <a href="https://wa.me/573173562745?text=Hola%20Samdersson,%20quiero%20cotizar%20un%20proyecto" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="btn-cta-primary"
+                   onclick="gtag('event', 'click_whatsapp', {'event_category': 'Contacto', 'event_label': 'CTA Footer Whatsapp'});">
+                    <i class="fab fa-whatsapp"></i> Chat Directo por WhatsApp
+                </a>
+                <a href="mailto:san9639@gmail.com" 
+                   class="btn-cta-secondary"
+                   onclick="gtag('event', 'click_email', {'event_category': 'Contacto', 'event_label': 'CTA Email'});">
+                    <i class="fas fa-envelope"></i> Enviar Correo
+                </a>
             </div>
         </div>
     </section>

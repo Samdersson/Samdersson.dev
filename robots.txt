@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://samdersson.netlify.app/sitemap.xml
